@@ -1,0 +1,148 @@
+/*
+	      Master Stylesheet
+===================================	
+	Template Name : Minimo
+	Author: Maqsudul Karim
+	Author Url: http://maqsudulkarim.com
+	Description: PSD to HTML Practise
+	Version: 1.0.0
+	Tag: Blog
+
+*/	
+
+/*
+         Table of Contents
+===================================
+		1. Typography
+		2.
+		3.
+		4.
+		5.
+		6.
+
+*/
+/* ====================
+       Typography
+==================== */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	padding: 0;
+	margin:0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size: 40px;
+	font-weight: 400;
+	color: #2d3950;
+	margin:0;
+	padding: 0;
+}
+h3{
+	font-size: 22px;
+}
+p{
+	font-size: 15px;
+	color: #999999;
+	margin:0;
+	padding: 0;
+}
+/* ====================
+         Header
+==================== */
+header{
+	background-color: #f6f9f9;
+}
+.navbar{
+	padding: 30px 0;
+}
+.nav-link{
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 0 15px !important;
+	color: #2d3950 !important;
+	transition: 0.3s all ease-in-out;
+}
+.nav-link:hover{
+	color: #15a4fa !important;
+}
+.navbar-toggler, .navbar-toggler span{
+    font-size: 30px;
+    color: #2d3950;
+    border-color: #2d3950;
+}
+.navbar-toggler:hover, .navbar-toggler:hover span{
+    font-size: 30px;
+    color: #15a4fa;
+    border-color: #15a4fa;
+}
+.navbar-nav{
+	text-align: center;
+}
+/* ====================
+         Banner
+==================== */
+#banner{
+	background-image: url(../images/banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#banner .row{
+	min-height: 700px;
+}
+.banner-content h2{
+    font-size: 120px;
+    font-weight: 700;
+    color: #ffffff;
+    padding-bottom: 25px;
+}
+.banner-content span{
+	border-bottom: 2px solid #15a4fa;
+	display: block;
+	width: 600px;
+	margin: auto;
+}
+.banner-content p{
+	color: #ffffff;
+	font-size: 18px;
+	padding: 40px 0 60px;
+}
+.banner-content .btn{
+	background-color: transparent;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #ffffff;
+	border: 1px solid #15a4fa;
+	padding: 0;
+	height: 58px;
+	width: 178px;
+	line-height: 58px;
+	transition: 0.3s all ease-in-out;
+}
+.banner-content .btn:hover{
+	background-color: #15a4fa;
+}
+.banner-content .down-icon a{
+	font-size: 35px;
+	color: #ffffff;
+	display: block;
+	transform: translate(0px, 60px);
+	-webkit-transform: translate(0px, 60px);
+	-moz-transform: translate(0px, 60px);
+	animation: move;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+@keyframes move{
+	0%{transform: translate(0px, 60px);
+	-webkit-transform: translate(0px, 60px);
+	-moz-transform: translate(0px, 60px);
+}
+	100%{transform: translate(0px, 140px);
+	-webkit-transform: translate(0px, 140px);
+	-moz-transform: translate(0px, 140px);}
+}
